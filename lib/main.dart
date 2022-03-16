@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import 'package:learn/custom_widget/home_view.dart';
 
 import 'dragDemo/Home.dart';
 
@@ -15,7 +16,7 @@ class App extends StatelessWidget {
         appBar: AppBar(
           title: Text('小案例'),
         ),
-        body: Home(),
+        body: CustomCheckboxTest(),
       ),
 
       //去掉右上角的debug贴纸

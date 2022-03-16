@@ -2,7 +2,7 @@ import "package:flutter/material.dart";
 
 class DragWidget extends StatefulWidget {
 //构造器传入坐标和参数
-  DragWidget({Key key, this.offset, this.widgetColor}) : super(key: key);
+  DragWidget({Key? key, required this.offset, required this.widgetColor}) : super(key: key);
   final Offset offset;
   final Color widgetColor;
 
