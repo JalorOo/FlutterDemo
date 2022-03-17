@@ -1,6 +1,7 @@
 import "package:flutter/material.dart";
 import 'package:learn/custom_widget/home_view.dart';
 
+import 'custom_paint/painter.dart';
 import 'dragDemo/Home.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class App extends StatelessWidget {
         appBar: AppBar(
           title: Text('小案例'),
         ),
-        body: CustomCheckboxTest(),
+        body: GradientCircularProgressRoute(),
       ),
 
       //去掉右上角的debug贴纸
