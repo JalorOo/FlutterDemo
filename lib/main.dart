@@ -17,7 +17,7 @@ class App extends StatelessWidget {
         appBar: AppBar(
           title: Text('小案例'),
         ),
-        body: GradientCircularProgressRoute(),
+        body: CustomCheckboxTest(),
       ),
 
       //去掉右上角的debug贴纸

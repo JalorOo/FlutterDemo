@@ -39,7 +39,7 @@ class CustomCheckbox extends LeafRenderObjectWidget {
 
   @override
   void updateRenderObject(context, RenderCustomCheckbox renderObject) {
-    print('updateRenderObject');
+    // print('updateRenderObject');
     ///updateRenderObject 方法中当选中状态发生变化时，
     ///我们要更新RenderObject中的动画状态，
     ///具体逻辑是：当从未选中切换为选中状态时，执行正向动画；当从选中状态切换为未选中状态时执行反向动画。
@@ -79,7 +79,7 @@ class RenderCustomCheckbox extends RenderBox with RenderObjectAnimationMixin {
 
   @override
   void doPaint(PaintingContext context, Offset offset) {
-    print('doPaint');
+    // print('doPaint');
     Rect rect = offset & size;
     _drawBackground(context, rect);
     if (progress > bgAnimationInterval) {

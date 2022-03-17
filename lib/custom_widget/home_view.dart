@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'custon_render_widget.dart';
+import 'learn_render_widget.dart';
 
 class CustomCheckboxTest extends StatefulWidget {
   const CustomCheckboxTest({Key? key}) : super(key: key);
@@ -17,9 +17,17 @@ class _CustomCheckboxTestState extends State<CustomCheckboxTest> {
     return Center(
       child: Column(mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          CustomCheckbox(
+          // CustomCheckbox(
+          //   value: _checked,
+          //   onChanged: _onChange,
+          // ),
+          TextButton(onPressed: (){
+            setState(() {
+              _checked = !_checked;
+            });
+          },child: Text("完成"),),
+          CustomFinishBox(
             value: _checked,
-            onChanged: _onChange,
           ),
           // Padding(
           //   padding: const EdgeInsets.all(18.0),
