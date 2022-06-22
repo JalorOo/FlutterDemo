@@ -1,8 +1,9 @@
 import "package:flutter/material.dart";
 import 'package:learn/custom_widget/home_view.dart';
+import 'package:learn/matrix4/matrix4_page.dart';
 
 import 'custom_paint/painter.dart';
-import 'dragDemo/Home.dart';
+import 'fold_cell/folding_cell_list_page.dart';
 
 void main() {
   runApp(App());
@@ -17,7 +18,7 @@ class App extends StatelessWidget {
         appBar: AppBar(
           title: Text('小案例'),
         ),
-        body: CustomCheckboxTest(),
+        body: MyHomePage(),
       ),
 
       //去掉右上角的debug贴纸
