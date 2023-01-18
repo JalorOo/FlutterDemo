@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class FloatActionMenu extends StatefulWidget {
+class FloatingActionMenu extends StatefulWidget {
   final Color backgroundColor;
   final String heroTag;
   final List<SubFloatActionButton> children;
 
-  FloatActionMenu(
+  FloatingActionMenu(
       {Key? key,
       required this.backgroundColor,
       required this.children,
@@ -13,14 +13,14 @@ class FloatActionMenu extends StatefulWidget {
       : super(key: key);
 
   @override
-  State<FloatActionMenu> createState() => _FloatActionMenuState();
+  State<FloatingActionMenu> createState() => _FloatingActionMenuState();
 }
 
-class _FloatActionMenuState extends State<FloatActionMenu>
+class _FloatingActionMenuState extends State<FloatingActionMenu>
     with TickerProviderStateMixin {
   late AnimationController _animationController; // 控制动画的类
-  List<Widget> _buttons = [];
   late Animation<double> _animation;
+  List<Widget> _buttons = [];
 
   @override
   void initState() {

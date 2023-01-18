@@ -15,7 +15,7 @@ class App extends StatelessWidget {
           title: Text('小案例'),
         ),
         // body: CustomCheckboxTest(),
-        floatingActionButton: FloatActionMenu(
+        floatingActionButton: FloatingActionMenu(
           backgroundColor: Colors.orange,
           children: [
             SubFloatActionButton(
