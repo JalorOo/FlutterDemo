@@ -11,7 +11,7 @@ class CustomFinishBox extends LeafRenderObjectWidget {
     this.strokeWidth = 2.0,
     this.value = false,
     this.strokeColor = Colors.white,
-    this.fillColor = Colors.blue,
+    this.fillColor = Colors.green,
     this.radius = 2.0,
   }) : super(key: key);
 

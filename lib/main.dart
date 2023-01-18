@@ -1,8 +1,5 @@
 import "package:flutter/material.dart";
-import 'package:learn/custom_widget/home_view.dart';
-
-import 'custom_paint/painter.dart';
-import 'dragDemo/Home.dart';
+import 'package:learn/animation_widget/float_action_menu.dart';
 
 void main() {
   runApp(App());
@@ -17,9 +14,29 @@ class App extends StatelessWidget {
         appBar: AppBar(
           title: Text('小案例'),
         ),
-        body: CustomCheckboxTest(),
+        // body: CustomCheckboxTest(),
+        floatingActionButton: FloatActionMenu(
+          backgroundColor: Colors.orange,
+          children: [
+            SubFloatActionButton(
+                callback: () {},
+                backgroundColor: Colors.orange,
+                content: Icon(
+                  Icons.file_open,
+                  color: Colors.white,
+                )),
+            SubFloatActionButton(
+                callback: () {
+                  print("hello");
+                },
+                backgroundColor: Colors.orange,
+                content: Icon(
+                  Icons.folder,
+                  color: Colors.white,
+                )),
+          ],
+        ),
       ),
-
       //去掉右上角的debug贴纸
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.blue),

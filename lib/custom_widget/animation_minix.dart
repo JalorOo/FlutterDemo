@@ -7,7 +7,7 @@ mixin RenderObjectAnimationMixin on RenderObject {
   int? _lastTimeStamp; // 上一次绘制的时间
 
   // 动画时长，子类可以重写
-  Duration get duration => const Duration(milliseconds: 250);
+  Duration get duration => const Duration(milliseconds: 100);
   // 默认状态为完成状态
   AnimationStatus _animationStatus = AnimationStatus.completed;
   // 设置动画状态
